@@ -4,7 +4,7 @@ const app = express();
 const db = require('./models');
 const bodyParser = require('body-parser');
 const corsOptions = require('./config/corsOptions') 
-
+require("dotenv").config();
 const port = process.env.PORT || 3001;
 const Role = db.role;
 app.use(bodyParser.json());

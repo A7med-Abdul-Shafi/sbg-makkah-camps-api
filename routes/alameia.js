@@ -6,7 +6,7 @@ const excelAlameia = require('../controllers/excelAlameia.js');
 const Sequelize = require('sequelize');
 const { Op } = require("sequelize");
 
-const date = new Date() 
+const date = new Date()  
 router
     .route('/alameia')
     .get(async (req, res) => {
